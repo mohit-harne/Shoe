@@ -1,5 +1,5 @@
 import React from 'react';
-import {   Route, Routes, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Men from './components/Men';
@@ -20,12 +20,16 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 const App = () => {
   return (
-    
+    <Auth0Provider
+      domain="dev-sh3dfiaxaa2e1bzf.us.auth0.com"
+      clientId="3JJzlkdvBVS9iH5HnxZsEOroGJWgPGkr"
+      redirectUri={window.location.origin}
+    >
       <div className="overflow-y-hidden">
-        <HashRouter >
+        <Router>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/" element={<Home />} />
             <Route path="/men" element={<Men />} />
             <Route path="/women" element={<Women />} />
             <Route path="/kids" element={<Kids />} />
@@ -41,11 +45,10 @@ const App = () => {
             <Route path="/product/:id" element={<ProductDetail />} />
           </Routes>
           <End />
-        </HashRouter>
+        </Router>
       </div>
-    
+    </Auth0Provider>
   );
 };
 
 export default App;
-  

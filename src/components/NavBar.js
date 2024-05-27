@@ -25,37 +25,37 @@ const NavBar = () => {
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/men"
+            href="/men"
           >
             MEN
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/women"
+            href="/women"
           >
             WOMEN
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/kids"
+            href="/kids"
           >
             KIDS
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/collection"
+            href="/collection"
           >
             COLLECTION
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/contact"
+            href="/contact"
           >
             CONTACT US
           </Navbar.Link>
           <Navbar.Link
             className="text-base text-white hover:text-black mt-[5px]"
-            href="#/aboutus"
+            href="/aboutus"
           >
             ABOUT US
           </Navbar.Link>
@@ -77,10 +77,10 @@ const NavBar = () => {
 </div>
 
           
-          <Navbar.Link className="invert" href="#/cart">
+          <Navbar.Link className="invert" href="/cart">
             <img src={cart} className="h-[30px] w-[30px]  " alt="M" />
           </Navbar.Link>
-          <Navbar.Link className="invert " href="#/favorate">
+          <Navbar.Link className="invert " href="/favorate">
             <img src={heart} className="h-[30px] w-[30px] " alt="M" />
           </Navbar.Link>
           <Navbar.Link>
