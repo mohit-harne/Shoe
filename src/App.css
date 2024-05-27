@@ -1,0 +1,60 @@
+.shoeone{
+  filter: drop-shadow(0px 5px 80px #808080c2);
+}
+.UPTO:hover {
+  @apply shadow-[0px_0px_12px_4px_rgba(185,28,28,0.71),0px_8px_10px_-6px_rgba(0,0,0,0.1)];
+  scale: 101%; transition: all; transition-duration: 200ms;
+}
+.DUNK:hover {
+  @apply shadow-[0px_0px_12px_4px_rgba(185,28,28,0.71),0px_8px_10px_-6px_rgba(0,0,0,0.1)];
+  scale: 101%; transition: all; transition-duration: 200ms;
+}
+
+
+.DUNKVIDEO{
+   @apply shadow-[0px_0px_12px_6px_rgba(185,28,28,0.71),0px_8px_10px_-6px_rgba(0,0,0,0.1)];
+}
+
+/* In your CSS file, e.g., custom.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.UPTO1{
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.search-label {
+  position: absolute;
+  top: 4.3rem;
+  left: 1.5rem;
+  font-size: 0.75rem;
+  color: #888;
+  animation: labelAnimation 0.6s ease forwards;
+}
+
+@keyframes labelAnimation {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 0.75rem;
+    top: 3.3rem;
+    left: 1.5rem;
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
