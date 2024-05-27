@@ -20,11 +20,7 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 const App = () => {
   return (
-    <Auth0Provider
-      domain="dev-sh3dfiaxaa2e1bzf.us.auth0.com"
-      clientId="3JJzlkdvBVS9iH5HnxZsEOroGJWgPGkr"
-      redirectUri={window.location.origin}
-    >
+    
       <div className="overflow-y-hidden">
         <HashRouter >
           <NavBar />
@@ -47,7 +43,7 @@ const App = () => {
           <End />
         </HashRouter>
       </div>
-    </Auth0Provider>
+    
   );
 };
 
