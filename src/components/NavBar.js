@@ -7,10 +7,10 @@ import { useAuth0 } from "@auth0/auth0-react";
 const NavBar = () => {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
   return (
-    <div>
+    <div className="">
       <Navbar className=" bg-black w-[100%] fixed z-10 ">
         <Navbar.Brand href="/">
-          <h1 className="text-4xl text-red-700 ml-[-80px] lg:ml-[-50px]  md:ml-[-100px]">
+          <h1 className="text-4xl text-red-700 ml-[-80px] lg:ml-[-50px]  md:ml-[-120px]">
             <span className="text-white ml-24">SNEA</span>KISS
           </h1>
         </Navbar.Brand>
@@ -59,7 +59,7 @@ const NavBar = () => {
           >
             ABOUT US
           </Navbar.Link>
-       <div className="flex flex-col gap-0 w-[170px] rounded-lg border-2 border-gray-500 hover:border-red-700 p-1 pl-1.5 mt-[-10px]">
+       <div className="flex flex-col gap-0 w-[170px] rounded-lg border-2 border-gray-500 hover:border-red-700 p-1 pl-1.5 lg:mt-[-10px] mt-[10px]">
   {
     isAuthenticated && <p className="text-white w-[20px]">{user.name}</p>
   }
@@ -76,13 +76,14 @@ const NavBar = () => {
   }
 </div>
 
-          
+          <div className="flex lg:flex-col md:flex-col flex-row">
           <Navbar.Link className="invert" href="/cart">
             <img src={cart} className="h-[30px] w-[30px]  " alt="M" />
           </Navbar.Link>
           <Navbar.Link className="invert " href="/favorate">
             <img src={heart} className="h-[30px] w-[30px] " alt="M" />
           </Navbar.Link>
+          </div>
           <Navbar.Link>
             <div className="grid text-white">
               <input
@@ -91,7 +92,7 @@ const NavBar = () => {
                 placeholder="Search now"
               />
               <img
-                className="opacity-[50%] ml-[230px] mt-[-25px] lg:ml-[190px] lg:mt-[-25px] md:ml-[190px] md:mt-[-25px] h-[20px] w-[20px] hover:cursor-pointer"
+                className="opacity-[50%] ml-[300px] mt-[-25px] lg:ml-[190px] lg:mt-[-25px] md:ml-[190px] md:mt-[-25px] h-[20px] w-[20px] hover:cursor-pointer"
                 src={search}
                 alt="M"
               />
